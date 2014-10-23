@@ -2,7 +2,7 @@
 
 2. Export these env vars in your shell. You only need them during Vagrant provisioning.
 
-    ```
+    ```bash
     export CANVAS_LMS_ADMIN_EMAIL="your email address"
     export CANVAS_LMS_ADMIN_PASSWORD="some admin password"
     export CANVAS_LMS_STATS_COLLECTION="opt_in" # or "opt_out" or "anonymous"
@@ -11,7 +11,7 @@
 
 3. Bring up the Vagrant box:
 
-    ```
+    ```bash
     vagrant up
     ```
 
