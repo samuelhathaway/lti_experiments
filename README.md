@@ -1,16 +1,20 @@
-To use:
+1. Install VirtualBox.
 
-1. Set these env vars in the shell you're going to run `vagrant up` from:
+2. Export these env vars in your shell. You only need them during Vagrant provisioning.
 
-```
-export CANVAS_LMS_ADMIN_EMAIL="your email address"
-export CANVAS_LMS_ADMIN_PASSWORD="some admin password"
-export CANVAS_LMS_STATS_COLLECTION="opt_in"
-export CANVAS_LMS_ACCOUNT_NAME="Your Institution"
-```
+    ```
+    export CANVAS_LMS_ADMIN_EMAIL="your email address"
+    export CANVAS_LMS_ADMIN_PASSWORD="some admin password"
+    export CANVAS_LMS_STATS_COLLECTION="opt_in" # or "opt_out" or "anonymous"
+    export CANVAS_LMS_ACCOUNT_NAME="Your Institution"
+    ```
 
-2. Run `vagrant up`.
+3. Bring up the Vagrant box:
 
-3. Get a coffee.
+    ```
+    vagrant up
+    ```
 
-4. Go to `http://localhost:3000` in your browser and log in with the email and password you gave in step 1.
+4. Get a coffee. This will take a while.
+
+5. Visit http://localhost:3000 in your browser. Log in with `$CANVAS_LMS_ADMIN_EMAIL` and `$CANVAS_LMS_ADMIN_PASSWORD`.
