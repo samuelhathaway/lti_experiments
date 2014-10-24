@@ -17,4 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			ENV["CANVAS_LMS_ACCOUNT_NAME"]
 		]
 	config.vm.network "forwarded_port", guest: 3000, host: 3000
+	if Vagrant.has_plugin?("vagrant-cachier")
+		config.cache.scope = :box
+	end
 end
