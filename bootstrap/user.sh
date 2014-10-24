@@ -11,7 +11,7 @@ configs='amazon_s3
          security
          external_migration'
 
-git clone https://github.com/instructure/canvas-lms.git canvas
+git clone --depth 1 https://github.com/instructure/canvas-lms.git canvas
 cd canvas
 bundle install --without mysql
 for config in $configs; do
